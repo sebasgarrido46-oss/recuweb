@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body.pagina1 {
+    background: #1a1a1a; 
+}
+
+
+header, section, footer, p, li, h1, h2, label, a {
+    color: #f2f2f2;
+    text-shadow: 1px 1px 3px black;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background: none;
+    flex: 1;
+}
+
+footer {
+    background: none;
+    text-align: center;
+    padding: 0;
+    margin-top: auto;
+}
+
+.barra-enlaces {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.barra-enlaces a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+video {
+    border-radius: 8px;
+}
+
+body.index {
+    background-image: url("img/fondo2.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+body.index::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1; 
+}
+
+#enlaces img {
+    width: 180px;      
+    margin: 10px;
+    border-radius: 8px;
+}
+#enlaces {
+    padding: 30px;
+    text-align: center;
+}
+
+.texto-enlaces {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.contenedor-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.enlace-box {
+    width: 180px;
+    text-align: center;
+}
+
+.enlace-box img {
+    width: 100%;
+    height: 120px; 
+    object-fit: contain; 
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    margin-top: 10px; 
+}
+
+
+.enlace-box img:hover {
+    transform: scale(1.05);
+}
+
+.enlace-box p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.gracias-contenido {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gracias-contenido h2 {
+    font-size: 36px;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.gif-gracias {
+    width: 300px;
+    max-width: 90%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+}
+
+#canciones-relajantes audio {
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.botones-gracias {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #666;
+}
+
+
+.estrellas {
+    font-size: 24px;
+    line-height: 2;
+}
+
+.estrellas input[type="radio"] {
+    display: none;
+}
+
+.estrellas label {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #f2f2f2;
+}
+
+
